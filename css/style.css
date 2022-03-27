@@ -115,16 +115,19 @@ header .logo {
 	margin-left: 10px;
 }
 
-.main-nav ul li:hover {
-  font-weight: bold;
-}
-
 .main-nav a {
 	padding: 5px 20px;
 	color: black;
 	white-space: nowrap;
 	text-decoration: none;
 	background-color: #ede599;
+	transition: all 150ms ease-in-out;
+}
+
+.main-nav ul li:hover a {
+	color: #ede599;
+  background-color: #08a5a4;
+	border-radius: 5px;
 }
 
 main .container {
@@ -134,7 +137,6 @@ main .container {
 }
 
 main h1 {
-	flex-shrink: 0;
 	width: 100%;
 	margin: 15px 5px;
 	text-transform: uppercase;
@@ -238,6 +240,11 @@ footer section {
 
 	.burger-input:checked ~ .main-nav ul {
 		transform: translateX(-100%);
+	}
+
+	main h1 {
+		margin: 0px 5px;
+		font-size: 23px;
 	}
 
   .article-preview,
